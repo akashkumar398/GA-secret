@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-20.04
     environment: dev
     env:
-      MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-      MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
-      MYSQL_USER: ${{ secrets.MYSQL_USER }}
-      MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
-      NEW_DATABASE: ${{ secrets.NEW_DATABASE }}
+      MYSQL_ROOT_PASSWORD: 'PWD@@'
+      MYSQL_DATABASE: 'DATABASE'
+      MYSQL_USER: 'USER'
+      MYSQL_PASSWORD: 'PASSWORD'
+      NEW_DATABASE: 'NEW'
     services:
       db:
         image: mysql:8.0
